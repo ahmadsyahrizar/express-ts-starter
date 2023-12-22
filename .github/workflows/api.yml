@@ -2,7 +2,7 @@ name: Fly.io Backend deployment
 on:
     push:
         branches:
-            - main
+            - "**"
 jobs:
     deploy:
         name: deploy app using fly.io
