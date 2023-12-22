@@ -2,7 +2,7 @@ name: Fly.io Backend deployment
 on:
     push:
         branches:
-            - main
+            - "**"
 jobs:
     deploy:
         name: deploy app using fly.io
@@ -14,3 +14,5 @@ jobs:
             - uses: actions/checkout@v3
             - uses: superfly/flyctl-actions/setup-flyctl@master
             - run: flyctl deploy --remote-only
+              env:
+                FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
