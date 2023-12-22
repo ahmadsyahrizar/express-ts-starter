@@ -12,5 +12,5 @@ jobs:
                 working-directory: "./api"
         steps:
             - uses: actions/checkout@v3
-            - uses: uperfly/flyctl-actions/setup-flyctl@master
+            - uses: superfly/flyctl-actions/setup-flyctl@master
             - run: flyctl deploy --remote-only
