@@ -4,7 +4,7 @@ const app: Express = express();
 const port = 3000;
 
 app.get("/", (_, res: Response) => {
-  res.send("Express + TypeScript Server ++++++");
+  res.send("TEST EXPRESS API WITH GITHUB ACTION AND FLY IO DEPLOYMENT");
 });
 
 app.listen(port, () => {
