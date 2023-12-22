@@ -16,7 +16,7 @@ jobs:
               with:
                 node-version: 18.x
                 cache: 'npm'
-                cache-dependencies: package-lock.json
+                cache-dependencies: ./frontend/package-lock.json
             - name: npm install
               run: npm install
             - name: npm build
